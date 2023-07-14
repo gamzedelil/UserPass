@@ -23,16 +23,15 @@ public class Main {
 		else { 
 			System.out.println("Your password is incorrect. Do you want to reset your password? (Please write Yes or No.)");
 			answer = inp.nextLine(); }
-		switch (answer) {
+      switch (answer) {
         case "Yes" :
             System.out.println("Enter your new password.");
             newpassword = inp.nextLine();
 
             if (newpassword.equals("gamze123")) {
-                System.out.println("Your new password cannot be the same as the previous one.Try again.");
-            } else {
-                System.out.println("Your password has changed successfully.");
-            }
+                System.out.println("Your new password cannot be the same as the previous one.Try again."); } 
+	    else {
+                System.out.println("Your password has changed successfully."); }
             break;
 
         case "No" :
